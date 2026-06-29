@@ -1,0 +1,52 @@
+{
+  "name": "firewood",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Three.js firewood splitting simulator with seasonal gameplay.",
+  "author": "promptwhisper",
+  "license": "MIT",
+  "packageManager": "pnpm@11.7.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/promptwhisper/firewood.git"
+  },
+  "homepage": "https://github.com/promptwhisper/firewood",
+  "bugs": {
+    "url": "https://github.com/promptwhisper/firewood/issues"
+  },
+  "keywords": [
+    "threejs",
+    "nextjs",
+    "firewood",
+    "simulation",
+    "game"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "preview": "pnpm build && pnpm dlx serve out",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "check": "pnpm lint && pnpm typecheck && pnpm build"
+  },
+  "dependencies": {
+    "@wolffo/three-fire": "^1.4.0",
+    "cannon-es": "^0.20.0",
+    "next": "16.2.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "three": "^0.184.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/three": "^0.184.1",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.1",
+    "typescript": "^5"
+  }
+}

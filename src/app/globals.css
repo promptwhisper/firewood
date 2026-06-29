@@ -1,0 +1,235 @@
+/* Firewood simulator UI styles. */
+
+* {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  touch-action: none;
+  -webkit-touch-callout: none;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #e8d5b0;
+  font-family: var(--font-roboto), Roboto, sans-serif;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#loading {
+  color: #e8d5b0;
+  z-index: 1000;
+  background: #1a1207;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-family: Georgia, serif;
+  transition: opacity 0.5s;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#loading.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loading-inner {
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.loading-text {
+  letter-spacing: 0.1em;
+  font-size: 1.4rem;
+}
+
+.loading-count {
+  opacity: 0.6;
+  letter-spacing: 0.05em;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.9rem;
+}
+
+.loading-bar-track {
+  background: rgba(232, 213, 176, 0.15);
+  border-radius: 2px;
+  width: 220px;
+  height: 4px;
+  overflow: hidden;
+}
+
+.loading-bar-fill {
+  background: #e8d5b0;
+  border-radius: 2px;
+  width: 0%;
+  height: 100%;
+  transition: width 0.25s;
+}
+
+.hint-overlay {
+  z-index: 500;
+  pointer-events: none;
+  isolation: isolate;
+  opacity: 1;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  padding-top: 10vh;
+  transition: opacity 1s;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.hint-overlay.fade-out {
+  opacity: 0;
+}
+
+.hint-inner {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 32px;
+  display: flex;
+}
+
+.hint-line {
+  color: #e8d5b0;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.08em;
+  font-family: Georgia, serif;
+}
+
+.hint-line:first-child {
+  font-size: 1.4rem;
+}
+
+.hint-separator {
+  color: #e8d5b0;
+  margin: 10px 0;
+  font-family: Georgia, serif;
+  font-size: 0.6rem;
+}
+
+.hint-action {
+  font-size: 1.4rem;
+}
+
+.gameplay-hud {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 110;
+  width: 190px;
+  color: #f3e4c5;
+  pointer-events: none;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.75);
+}
+
+.gameplay-primary,
+.gameplay-secondary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.gameplay-primary {
+  margin-bottom: 7px;
+}
+
+.gameplay-season {
+  margin-bottom: 4px;
+  color: rgba(238, 221, 187, 0.82);
+  font-size: 11px;
+}
+
+.gameplay-season.transition,
+.gameplay-season.winter {
+  color: #dceaf0;
+}
+
+.gameplay-wood {
+  font-family: Georgia, serif;
+  font-size: 16px;
+}
+
+.gameplay-score {
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}
+
+.fire-meter {
+  width: 100%;
+  height: 4px;
+  overflow: hidden;
+  background: rgba(12, 8, 4, 0.55);
+  border: 1px solid rgba(255, 231, 181, 0.28);
+}
+
+.fire-meter-fill {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: #ff9b3e;
+  box-shadow: 0 0 8px rgba(255, 112, 30, 0.8);
+  transition: width 0.5s ease;
+}
+
+.gameplay-secondary {
+  margin-top: 6px;
+  color: rgba(243, 228, 197, 0.7);
+  font-size: 11px;
+}
+
+.streak.active {
+  color: #ffd07a;
+}
+
+.hit-quality {
+  min-width: 33px;
+  text-align: right;
+}
+
+.hit-quality.clean {
+  color: #ffd07a;
+}
+
+.hit-quality.good {
+  color: #d7e7c2;
+}
+
+.hit-quality.off {
+  color: rgba(243, 228, 197, 0.48);
+}
+
+@media (max-width: 640px) {
+  .gameplay-hud {
+    top: 12px;
+    right: 12px;
+    width: 156px;
+  }
+
+  .gameplay-secondary {
+    font-size: 10px;
+  }
+}
