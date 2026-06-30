@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[90623,["/firewood/_next/static/chunks/02g2kcs.c2~c_.js","/firewood/_next/static/chunks/13hb__x7a_axp.js"],"FirewoodSimulator"]
+3:I[64156,["/firewood/_next/static/chunks/02g2kcs.c2~c_.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","script","script-0",{"src":"/firewood/_next/static/chunks/13hb__x7a_axp.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"FPYEOkPEiA5D74jftnEyW"}
+5:null

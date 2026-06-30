@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[64156,["/firewood/_next/static/chunks/02g2kcs.c2~c_.js"],"ViewportBoundary"]
+3:I[64156,["/firewood/_next/static/chunks/02g2kcs.c2~c_.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+5:I[21126,["/firewood/_next/static/chunks/02g2kcs.c2~c_.js"],"IconMark"]
+0:{"rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"劈柴模拟器"}],["$","meta","1",{"name":"description","content":"在 3D 场景中劈柴、收集木料并点旺篝火"}],["$","link","2",{"rel":"icon","href":"/firewood/firewood/favico.png"}],["$","$L5","3",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"FPYEOkPEiA5D74jftnEyW"}
